@@ -25,9 +25,18 @@ public class SplitArray {
         int index_2 = scanner.nextInt();
 
         //Tách mảng
-        System.out.println("Mảng sau khi tách là");
+        System.out.println("Mảng được tách ra là");
         for (int i = index_1 - 1; i < index_2; i++) {
             System.out.printf(array[i]+"\t");
+        }
+
+        //In ra mảng còn lại
+        System.out.println("\nMảng còn lại sau khi tách là:");
+        for (int i = 0; i < size; i++) {
+            if (i < index_1 - 1 || i > index_2 - 1) {
+                System.out.printf(array[i] + "\t");
+            }
+
         }
     }
 }
