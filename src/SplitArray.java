@@ -23,5 +23,11 @@ public class SplitArray {
         int index_1 = scanner.nextInt();
         System.out.println("Nhập vào vị trí thứ hai tách mảng:");
         int index_2 = scanner.nextInt();
+
+        //Tách mảng
+        System.out.println("Mảng sau khi tách là");
+        for (int i = index_1 - 1; i < index_2; i++) {
+            System.out.printf(array[i]+"\t");
+        }
     }
 }
